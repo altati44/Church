@@ -1,0 +1,93 @@
+Application.CreateForm(TFormImpresion, FormImpresion);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm5, Form5);
+  Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
+  Application.CreateForm(TForm8, Form8);
+  Application.CreateForm(TForm9, Form9);
+  Application.CreateForm(TForm10, Form10);
+  Application.CreateForm(TForm11, Form11);
+  Application.CreateForm(TForm12, Form12);
+  Application.CreateForm(TFormOrdenar, FormOrdenar);
+  Application.CreateForm(TForm13, Form13);
+  Application.CreateForm(TFormBImportar, FormBImportar);
+  Application.CreateForm(TFormEspera, FormEspera);
+  Application.CreateForm(TFormBusqAntExt, FormBusqAntExt);
+  Application.CreateForm(TFormDateVisitas, FormDateVisitas);
+  Application.CreateForm(TFormEnfermedades, FormEnfermedades);
+  Application.CreateForm(TFormIdiomas, FormIdiomas);
+  Application.CreateForm(TFormAddIdioma, FormAddIdioma);
+  Application.CreateForm(TFormAddEnfermedad, FormAddEnfermedad);
+  Application.CreateForm(TFormConfigurarDB, FormConfigurarDB);
+  Application.CreateForm(TFormAbout, FormAbout);
+  Application.CreateForm(TFormFechaNBD, FormFechaNBD);
+  Application.CreateForm(TFormConfigPage, FormConfigPage);
+  Application.CreateForm(TFormTarjetero, FormTarjetero);
+
+
+
+{uses
+  Forms,
+  Principal in 'Principal.pas' {Form1},
+  Unit2 in 'Unit2.pas' {Form2},
+  Unit3 in 'Unit3.pas' {Form3},
+  Reporte in 'Reporte.pas' {Form5},
+  GuardaBuscar in 'GuardaBuscar.pas' {Form6},
+  Unit7 in 'Unit7.pas' {Form7},
+  Unit8 in 'Unit8.pas' {Form8},
+  Unit9 in 'Unit9.pas' {Form9},
+  Unit10 in 'Unit10.pas' {Form10},
+  Unit11 in 'Unit11.pas' {FormAo},
+  Unit12 in 'Unit12.pas' {Form12},
+  UnitImpresion in 'UnitImpresion.pas' {FormImpresion},
+  UnitOrdenar in 'UnitOrdenar.pas' {FormOrdenar},
+  Unit13 in 'Unit13.pas' {Form13},
+  UnitBImportar in 'UnitBImportar.pas' {FormBImportar},
+  UnitEspera in 'UnitEspera.pas' {FormEspera},
+  UnitBusqAntExt in 'UnitBusqAntExt.pas' {FormBusqAntExt},
+  UnitDateVisitas in 'UnitDateVisitas.pas' {FormDateVisitas},
+  UnitEnfermedades in 'UnitEnfermedades.pas' {FormEnfermedades},
+  UnitIdiomas in 'UnitIdiomas.pas' {FormIdiomas},
+  UnitAddIdioma in 'UnitAddIdioma.pas' {FormAddIdioma},
+  UnitAddEnfernedad in 'UnitAddEnfernedad.pas' {FormAddEnfermedad},
+  UnitConfigurarDB in 'UnitConfigurarDB.pas' {FormConfigurarDB},
+  UnitAbout in 'UnitAbout.pas' {FormAbout},
+  UnitFechaNBD in 'UnitFechaNBD.pas' {FormFechaNBD},
+  UnitConfigPage in 'UnitConfigPage.pas' {FormConfigPage},
+  UnitTarjetero in 'UnitTarjetero.pas' {FormTarjetero},
+  UnitCheckKey in 'UnitCheckKey.pas' {FormCheckKey},
+  UnitSplash in 'UnitSplash.pas' {FormSplash},
+  UnitBorrarID in 'UnitBorrarID.pas' {FormBorrarID},
+  UnitEstablecerID in 'UnitEstablecerID' {FormEstablecerID};}
+
+  {Application.CreateForm(TForm1, Form1);
+  Application.CreateForm(TFormImpresion, FormImpresion);
+  Application.CreateForm(TForm2, Form2);
+  Application.CreateForm(TForm5, Form5);
+  Application.CreateForm(TForm6, Form6);
+  Application.CreateForm(TForm7, Form7);
+  Application.CreateForm(TForm8, Form8);
+  Application.CreateForm(TForm9, Form9);
+  Application.CreateForm(TForm10, Form10);
+  Application.CreateForm(TForm11, Form11);
+  Application.CreateForm(TForm12, Form12);
+  Application.CreateForm(TFormOrdenar, FormOrdenar);
+  Application.CreateForm(TForm13, Form13);
+  Application.CreateForm(TFormBImportar, FormBImportar);
+  Application.CreateForm(TFormEspera, FormEspera);
+  Application.CreateForm(TFormBusqAntExt, FormBusqAntExt);
+  Application.CreateForm(TFormDateVisitas, FormDateVisitas);
+  Application.CreateForm(TFormEnfermedades, FormEnfermedades);
+  Application.CreateForm(TFormIdiomas, FormIdiomas);
+  Application.CreateForm(TFormAddIdioma, FormAddIdioma);
+  Application.CreateForm(TFormAddEnfermedad, FormAddEnfermedad);
+  Application.CreateForm(TFormConfigurarDB, FormConfigurarDB);
+  Application.CreateForm(TFormAbout, FormAbout);
+  Application.CreateForm(TFormFechaNBD, FormFechaNBD);
+  Application.CreateForm(TFormConfigPage, FormConfigPage);
+  Application.CreateForm(TFormTarjetero, FormTarjetero);
+  Application.CreateForm(TFormBorrarID, FormBorrarID);
+  Application.CreateForm(TFormEstablecerID, FormEstablecerID);
+  Application.CreateForm(TForm3, Form3);
+  Application.CreateForm(TFormAo, FormAo);
+  Application.CreateForm(TFormCheckKey, FormCheckKey);}

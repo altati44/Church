@@ -1,0 +1,10 @@
+Fallecido LIKE true
+Fallecido LIKE false
+fallecido=false
+fallecido=not true
+fallecido=true
+fallecido='Si' or Desfraternizado='si' or Traslado='si'
+Nombre IS  NOT  NULL 
+Nombre='juana'
+Nombre='jua'
+Nombre='juaa'

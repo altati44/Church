@@ -1,0 +1,59 @@
+Nombre NOT LIKE '?a*'
+asdfasdfasdf
+fallecido=true or Traslado=true
+fallecido=true or Trasladado=true
+fallecido=true and Trasladado=true
+[Fecha Bautismo]>=#1/1/2000# and [Fecha Bautismo]<=#31/12/2000#
+Nombre  BETWEEN  'Addamms' AND 'Tahily Berenice'
+Fallecido LIKE false
+Fallecido LIKE true
+Fallecido NOT LIKE true
+Fallecido NOT LIKE 'true'
+Nombre NOT LIKE '?ania'
+fallecido=true
+true
+wqrrw
+Nombre LIKE '[a-e]*' 
+pablo
+Samuel
+<<[Fecha Bautismo]>=#1/1/2000# and [Fecha Bautismo]<=#31/12/2000#
+Nombre LIKE '[s-t]*' AND Foto IS NOT NULL
+Edad>=8 AND Edad<=36 AND Foto IS NOT  NULL
+Tania
+[Fecha Bautismo]>=#1/1/1997# AND [Fecha Bautismo]<=#12/31/1997#
+Ta
+Suárez
+Nora
+Oficio LIKE 'salud'                                    
+Oficio LIKE 'Trabajador de la salud'                                    
+Oficio='Trabajador de la salud'                                         
+Oficio='Salud'                                         
+Oficio='Salud'
+(Nombre LIKE '[a-c]*'  or Nombre  LIKE '?l*')  and edad is not null       
+(Nombre LIKE '[a-c]*'  or Nombre  LIKE '?l*' ) and edad is not null       
+Nombre LIKE '[a-c]*'  or Nombre  LIKE '?l*'   and edad is not null       
+Nombre LIKE '[a-c]*'  or Nombre  LIKE '?l*'          
+[Fecha Nacimiento] >=#3/1/1942# AND [Fecha nacimiento]<=#3/31/1942#
+[Fecha Nacimiento] >=#1/3/1942# AND [Fecha nacimiento]<=#31/3/1942#
+[Fecha Nacimiento] >=#1/3/1997# AND [Fecha nacimiento]<=#31/3/1997#
+[Fecha Nacimiento] >=#1/1/1997# AND 
+[Fecha Bautismo]<=#12/31/1997#
+juan
+Nombre LIKE '[a-c]*'  and Nombre  LIKE '?l*'          
+Nombre LIKE '[a-c]*'            
+Nombre LIKE 'juan'            
+Nombre LIKE 'juan*'            
+[Fecha Bautismo] IS NULL and Desfraternizado='si'
+[Fecha Bautismo] IS NULL and Desfraternizado='no'
+[Fecha Bautismo] IS NULL 
+[Fecha Bautismo] IS not NULL 
+Nombre IS not NULL 
+Nombre IS  NULL 
+[Fecha Bautismo]>=#1/1/1997# AND 
+[Fecha Bautismo]<=#12/31/1997#
+Desfraternizado='si'
+Nombre LIKE '[b-c]*'
+Nombre LIKE '?a*'
+Nombre LIKE '?ania'
+Nombre LIKE 'juan*'
+Nombre LIKE '[a-c]*'

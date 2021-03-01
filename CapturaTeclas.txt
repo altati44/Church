@@ -1,0 +1,30 @@
+//Para usarlo como capturador de teclas, lo vi en un ReportPreview
+//En el private poner esto
+
+Private
+procedure CMDialogKey(var message: TCMDialogKey); message CM_DIALOGKEY;
+
+//Este es el procedimiento
+procedure TJMQRPreview.CMDialogKey(var message: TCMDialogKey);
+begin {INTERCEPTS ARROW KEYS INORDER TO MOVE AROUND PAGE}
+  with message do
+         case CharCode of
+           VK_LEFT: begin
+                 with Preview.HorzScrollbar do Position := Position -50;
+                 exit;
+                 end;
+                VK_RIGHT: begin
+                 with Preview.HorzScrollbar do Position := Position +50;
+                 exit;
+                 end;
+                VK_UP: begin
+                 with Preview.VertScrollbar do Position := Position -50;
+                 exit;
+                 end;
+                VK_DOWN: begin
+                 with Preview.VertScrollbar do Position := Position +50;
+                 exit;
+                 end;
+         end;
+  inherited;
+end;

@@ -1,0 +1,3 @@
+INSERT INTO TMiembros ( Nombre, [Primer Apellido], [Segundo Apellido], [No Identidad], Sexo, Dirección, [Fecha Bautismo] ) IN 'D:\Proyect-Mayo 5 2008 tarde-ESTE\DataBase\bd1-prueba.mdb'
+SELECT TMiembros.Nombre, TMiembros.[Primer Apellido], TMiembros.[Segundo Apellido], TMiembros.[No Identidad], TMiembros.Sexo, TMiembros.Dirección, TMiembros.[Fecha Bautismo]
+FROM TMiembros  UNION SELECT TMiembros.Nombre, TMiembros.[Primer Apellido], TMiembros.[Segundo Apellido], TMiembros.[No Identidad], TMiembros.Sexo, TMiembros.Dirección, TMiembros.[Fecha Bautismo] FROM TMiembros;

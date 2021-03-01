@@ -1,0 +1,192 @@
+server {
+        listen 80;
+		listen [::]:80;
+        server_name admin.cnci.mx;
+		return 301 https://$host$request_uri;
+        
+        index index.html index.php;
+
+        charset utf-8;
+
+        access_log off;
+        log_not_found off;
+
+        sendfile off;
+
+        server_tokens off;
+
+        root /var/www/admin.cnci.mx;
+        
+        location / {
+                #deny all;
+                try_files $uri $uri/ /index.html?$args;
+        }
+		
+		location /api {
+                root /var/www/apis.cnci.mx/admin/public;
+
+                rewrite ^/api/(.*)$ /$1 break;
+
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+		location /comisapp {
+                root /var/www/apis.cnci.mx/comisapp/public;
+
+                rewrite ^/comisapp/(.*)$ /$1 break;
+
+                try_files $uri $uri/ /index.php?$args;
+        }
+		
+				location /image.jpg {
+                root /var/www/apis.cnci.mx/admin/public/uploads/image.jpg;
+
+                rewrite ^/image.jpg/(.*)$ /$1 break;
+
+                try_files $uri $uri/ /index.php?$args;
+        }
+		
+		location /chat {
+		  proxy_pass http://localhost:5001;
+		  proxy_http_version 1.1;
+		  proxy_set_header Upgrade $http_upgrade;
+		  proxy_set_header Connection 'upgrade';
+		  proxy_set_header Host $host;
+		  proxy_cache_bypass $http_upgrade;
+		}
+	
+        location ~ \.php$ {
+                set $newurl $request_uri;
+                if ($newurl ~ ^/api(.*)$) {
+                        set $newurl $1;
+                        root /var/www/apis.cnci.mx/admin/public;
+                }
+
+				if ($newurl ~ ^/comisapp(.*)$) {
+                        set $newurl $1;
+                        root /var/www/apis.cnci.mx/comisapp/public;
+                }
+				
+				if ($newurl ~ ^/image.jpg(.*)$) {
+                        set $newurl $1;
+                        root /var/www/apis.cnci.mx/admin/public/uploads/image.jpg;
+                }
+
+                fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                #fastcgi_pass unix:/var/run/php5-fpm.sock;      #debian php5
+                fastcgi_pass unix:/var/run/php/php7.0-fpm.sock; #debian php7
+                fastcgi_index index.php;
+                include fastcgi_params;
+                fastcgi_param REQUEST_URI $newurl;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                fastcgi_intercept_errors off;
+                fastcgi_buffer_size 16k;
+                fastcgi_buffers 4 16k;
+        }
+		
+		location ~ /\.ht {
+                deny all;
+        }
+}
+
+
+server {
+        listen 443;
+        server_name admin.cnci.mx;
+        
+        index index.html index.php;
+
+        charset utf-8;
+
+        access_log /var/log/ssl/ssl_access.log;
+		error_log /var/log/ssl/ssl_error.log;
+
+        root /var/www/admin.cnci.mx;
+		
+		ssl on;
+		ssl_certificate /etc/letsencrypt/live/admin.cnci.mx/fullchain.pem; # managed by Certbot
+		ssl_certificate_key /etc/letsencrypt/live/admin.cnci.mx/privkey.pem; # managed by Certbot
+
+        
+        location / {
+                #deny all;
+                try_files $uri $uri/ /index.html?$args;
+        }
+
+        location /api {
+                root /var/www/apis.cnci.mx/admin/public;
+
+                rewrite ^/api/(.*)$ /$1 break;
+
+                try_files $uri $uri/ /index.php?$args;
+        }
+
+		location /comisapp {
+                root /var/www/apis.cnci.mx/comisapp/public;
+
+                rewrite ^/comisapp/(.*)$ /$1 break;
+
+                try_files $uri $uri/ /index.php?$args;
+        }
+		
+		location /chatsocket {
+		  proxy_pass http://localhost:5001;
+		  proxy_http_version 1.1;
+		  proxy_set_header Upgrade $http_upgrade;
+		  proxy_set_header Connection 'upgrade';
+		  proxy_set_header Host $host;
+		  proxy_cache_bypass $http_upgrade;
+		}
+
+	location /xmlsocket {
+                  proxy_pass http://localhost:5002;
+                  proxy_http_version 1.1;
+                  proxy_set_header Upgrade $http_upgrade;
+                  proxy_set_header Connection 'upgrade';
+                  proxy_set_header Host $host;
+                  proxy_cache_bypass $http_upgrade;
+                }
+		
+						location /perro.jpg {
+                root /var/www/apis.cnci.mx/admin/public/uploads/perro.jpg;
+
+                rewrite ^/perro.jpg/(.*)$ /$1 break;
+
+                try_files $uri $uri/ /index.php?$args;
+        }
+	
+        location ~ \.php$ {
+                set $newurl $request_uri;
+                if ($newurl ~ ^/api(.*)$) {
+                        set $newurl $1;
+                        root /var/www/apis.cnci.mx/admin/public;
+                }
+
+				if ($newurl ~ ^/comisapp(.*)$) {
+                        set $newurl $1;
+                        root /var/www/apis.cnci.mx/comisapp/public;
+                }
+				
+				if ($newurl ~ ^/perro.jpg(.*)$) {
+                        set $newurl $1;
+                        root /var/www/apis.cnci.mx/admin/public/uploads/perro.jpg;
+                }
+
+                fastcgi_split_path_info ^(.+\.php)(/.+)$;
+                #fastcgi_pass unix:/var/run/php5-fpm.sock;      #debian php5
+                fastcgi_pass unix:/var/run/php/php7.0-fpm.sock; #debian php7
+                fastcgi_index index.php;
+                include fastcgi_params;
+                fastcgi_param REQUEST_URI $newurl;
+                fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+                fastcgi_intercept_errors off;
+                fastcgi_buffer_size 16k;
+                fastcgi_buffers 4 16k;
+        }
+		
+		location ~ /\.ht {
+                deny all;
+        }
+
+}
+

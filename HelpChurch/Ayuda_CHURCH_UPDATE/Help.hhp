@@ -1,0 +1,17 @@
+[OPTIONS]
+Compatibility=1.1 or later
+Compiled file=HelpChurch.chm
+Contents file=Table of Contents.hhc
+Default Window=Windows1
+Default topic=D:\Ayuda_CHURCH_UPDATE\presentacion.html
+Display compile progress=No
+Full-text search=Yes
+Language=0xc0a Español (alfabetización internacional)
+Title=HelpChurch - lasptaniSoft
+
+[WINDOWS]
+Windows1="HelpChurch - lasptaniSoft","D:\Ayuda_CHURCH_UPDATE\Table of Contents.hhc",,"D:\Ayuda_CHURCH_UPDATE\presentacion.html",,,,,,0x42520,,0x300e,[208,101,852,523],,,,,,,0
+
+
+[INFOTYPES]
+

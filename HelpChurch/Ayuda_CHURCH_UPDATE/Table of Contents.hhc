@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD><BODY>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Contenido General">
+		<param name="Local" value="presentacion.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Barra de Botones">
+			<param name="Local" value="BarraBotones.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Barra de Estado">
+			<param name="Local" value="BarraEstado.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Botones">
+			<param name="Local" value="Botones.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="B&uacute;squedas">
+			<param name="Local" value="Busqueda.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Configuraci&oacute;n">
+			<param name="Local" value="Configuracion.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Configurar P&aacute;gina">
+			<param name="Local" value="ConfigurarPagina.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Explorador de Iglesias">
+			<param name="Local" value="ExploaradorIglesias.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Importar/Exportar">
+			<param name="Local" value="ImportarExportar.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Impresi&oacute;n">
+			<param name="Local" value="Impresion.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Men&uacute; Principal">
+			<param name="Local" value="MenuPrincipal.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Nombramientos">
+			<param name="Local" value="Nombramientos.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ordenar">
+			<param name="Local" value="Ordenar.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Panel de Informaci&oacute;n Adicional">
+			<param name="Local" value="PanelInfoAdicional.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pasos para Iniciar con Church">
+			<param name="Local" value="Pasos.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Pastores Dist/Igl">
+			<param name="Local" value="PastoresDistIgl.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Rejilla de Datos">
+			<param name="Local" value="RejillaDatos.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Tabla Maestra">
+			<param name="Local" value="TablaMaestra.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Teclas de Acceso">
+			<param name="Local" value="Teclas.html">
+			</OBJECT>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Ventana Principal">
+			<param name="Local" value="VentanaPrincipal.html">
+			</OBJECT>
+	</UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sobre Church - lasptaniSoft">
+		<param name="Local" value="presentacion1.html">
+		</OBJECT>
+	<UL>
+		<LI> <OBJECT type="text/sitemap">
+			<param name="Name" value="Edici&oacute;n">
+			<param name="Local" value="Edicion.html">
+			</OBJECT>
+	</UL>
+</UL>
+</BODY></HTML>

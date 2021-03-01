@@ -1,0 +1,16 @@
+SELECT TMiembros.Nombre, TMiembros.[Primer Apellido], TMiembros.[Segundo Apellido], TMiembros.[No Identidad], TMiembros.[Fecha Bautismo], TMiembros.Dirección, TMiembros.Sexo
+FROM TMiembros IN 'D:\Proyect-Mayo 5 2008 tarde-ESTE\DataBase\BaseDatos-R.mdb'
+WHERE (((TMiembros.Nombre) Not In (SELECT [Nombre]
+FROM [TMiembros] IN 'D:\BANCO DE DATOS-1\Proyect-Octubre 2008 tarde-ESTE\DataBase\BaseDatos-R.mdb')))
+ORDER BY TMiembros.Nombre;
+
+
+
+
+
+SELECT TMiembros.Nombre, TMiembros.[Primer Apellido], TMiembros.[Segundo Apellido], TMiembros.[No Identidad], TMiembros.[Fecha Bautismo], TMiembros.Dirección, TMiembros.Sexo
+FROM TMiembros IN 'D:\Proyect-Mayo 5 2008 tarde-ESTE\DataBase\BaseDatos-R.mdb'
+WHERE (  (((TMiembros.Nombre) Not In (SELECT [Nombre]
+FROM [TMiembros] IN 'D:\BANCO DE DATOS-1\Proyect-Octubre 2008 tarde-ESTE\DataBase\BaseDatos-R.mdb')))  OR  (((TMiembros.[Primer Apellido]) Not In (SELECT [Primer Apellido]
+FROM [TMiembros] IN 'D:\BANCO DE DATOS-1\Proyect-Octubre 2008 tarde-ESTE\DataBase\BaseDatos-R.mdb')))    )
+ORDER BY TMiembros.Nombre;
